@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-12-07 14:45+CET\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: siguanet-dbsetup.py:20
+msgid "Spatial reference system EPSG identifier"
+msgstr ""
+
+#: siguanet-dbsetup.py:21
+msgid "Max. number of aboveground floors"
+msgstr ""
+
+#: siguanet-dbsetup.py:22
+msgid "Max. number of underground floors"
+msgstr ""
+
+#: siguanet-dbsetup.py:23
+msgid "Output SQL script file name"
+msgstr ""
+
+#: siguanet-dbsetup.py:24
+msgid "PostgreSQL server address"
+msgstr ""
+
+#: siguanet-dbsetup.py:25
+msgid "PostgreSQL database name (PostGIS 2.0 extension required)"
+msgstr ""
+
+#: siguanet-dbsetup.py:26
+msgid "PostgreSQL server port"
+msgstr ""
+
+#: siguanet-dbsetup.py:27
+msgid "PostgreSQL user name"
+msgstr ""
+
+#: siguanet-dbsetup.py:28
+msgid "No database name provided. Use -d [DATABASE] option"
+msgstr ""
+
+#: siguanet-dbsetup.py:29
+msgid "No user name provided. Use -u [USERNAME] option"
+msgstr ""
+
+#: siguanet-dbsetup.py:30
+msgid "Password for user {0}: "
+msgstr ""
+
+#: siguanet-dbsetup.py:31
+msgid "{0} successfully created"
+msgstr ""
+
+#: siguanet-dbsetup.py:32
+msgid "PostgreSQL server version 9.1 or above is required"
+msgstr ""
+
+#: siguanet-dbsetup.py:33
+msgid "PostGIS 2 extension not found in database {0}"
+msgstr ""
+
+#: siguanet-dbsetup.py:34
+msgid "Database connection closed"
+msgstr ""
+
+#: siguanet-dbsetup.py:35
+msgid "Process ended successfully!"
+msgstr ""
+
