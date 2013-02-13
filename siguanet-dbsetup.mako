@@ -158,7 +158,7 @@ CREATE FUNCTION comprueba_texto_estancia() RETURNS trigger
         zona character varying;
         edificio character varying;
         planta character varying;
-        plantas character varying[];
+        estancia character varying;
     BEGIN
         IF char_length(NEW.codigo) < 9 THEN
             RAISE EXCEPTION 'La estancia % tiene menos de 9 caracteres',NEW.codigo;
@@ -177,18 +177,12 @@ CREATE FUNCTION comprueba_texto_estancia() RETURNS trigger
             RAISE EXCEPTION 'La estancia con código % tiene un codigo de edificio que NO EXISTE.',NEW.codigo;
         END IF;
         
-        plantas := listar_plantas(zona, edificio);
-
-	IF NOT planta = ANY(plantas) THEN
-            RAISE EXCEPTION 'La estancia con codigo  % tiene un codigo de planta que NO EXISTE.',NEW.codigo;
-        END IF;
-        
         IF lower('sig'||planta) != lower(TG_TABLE_NAME::character varying) THEN
             RAISE EXCEPTION 'La estancia con codigo  % tiene un codigo de planta no admitido en la tabla %.',NEW.codigo, TG_TABLE_NAME::character varying;
         END IF;
 
         IF estancia !~ '^[0-9]{3}$' THEN
-            RAISE EXCEPTION 'La estancia con codigo  % tiene un número de estancia no admitido.'
+            RAISE EXCEPTION 'La estancia con codigo  % tiene un número de estancia no admitido.';
         END IF;
 
         RETURN NEW;
@@ -228,7 +222,7 @@ CREATE TABLE actividades (
     personal boolean DEFAULT false,
     superficie_computable boolean DEFAULT true,
     inventariable boolean DEFAULT false,
-    carto character varying(15)
+    carto character varying(50)
 );
 
 COMMENT ON TABLE actividades IS 'Actividades que pueden ser desempeñadas en una estancia';
