@@ -644,3 +644,30 @@ ALTER TABLE ONLY cargos_dpto
 ALTER TABLE ONLY cargos_dpto
     ADD CONSTRAINT dptocargo FOREIGN KEY (coddpto) REFERENCES departamentossigua(cod_dpto_sigua) ON UPDATE RESTRICT ON DELETE RESTRICT;
 
+ALTER TABLE ONLY todasestancias
+    SET WITH OIDS;
+
+ALTER TABLE ONLY todaspersonas
+    SET WITH OIDS;
+
+ALTER TABLE ONLY becarios
+    SET WITH OIDS;
+
+ALTER TABLE ONLY personal
+    SET WITH OIDS;
+
+ALTER TABLE ONLY personalexternos
+    SET WITH OIDS;
+
+ALTER TABLE ONLY personalpas
+    SET WITH OIDS;
+
+ALTER TABLE ONLY personalpas_cargos
+    SET WITH OIDS;
+
+ALTER TABLE ONLY personalpdi
+    SET WITH OIDS;
+
+ALTER TABLE ONLY personalpdi_cargos
+    SET WITH OIDS;
+
