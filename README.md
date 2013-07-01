@@ -36,7 +36,7 @@ This will create a `siguanet-dbsetup.sql` script on your executable's path. In t
 * all PostGIS geometry definitions will be referenced to the spatial reference system specified in `srid`
 * as many PostGIS entity definitions for aboveground and basement floor levels  as indicated by the `aboveground` and `underground` parameters will be created  
   
-In order to save the output SQL script to a specific location, use:
+In order to save the output SQL script to a specific location, use:  
 `siguanet-dbsetup.py -o /path/to/youroutputscript.sql`  
   
 Finally, if you prefer to directly execute the generated script against your PostgreSQL server, use the connection definition options provided.
