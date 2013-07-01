@@ -4,7 +4,7 @@ siguanet-dbsetup
 Python based command-line tool for setting up a SIGUANET
 
 ## What's SIGUANET?
-SIGUANET is a free software project that aims to share the University of Alicante's corporate built asset management technology (SIGUA) with the developers community.
+SIGUANET is a free software project that aims to share the University of Alicante's corporate built asset management technology ([SIGUA](http://www.sigua.ua.es)) with the developers community.
 In this sense, SIGUANET will hopefully be useful for other universities and academic organizations.
 
 ## What's siguanet-dbsetup
