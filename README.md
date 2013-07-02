@@ -23,6 +23,7 @@ Remember that, beginning with version 2.0, PostGIS is installed as an extension 
 ### Python requirements
 This Python script has been tested on both, Python 2.7 and Python 3.2 environments on Linux boxes.
 It makes use of some libraries which may or may not be present in your distribution. Please ensure you have the following python modules installed:
+* argparse
 * mako
 * psycopg2
 
