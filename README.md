@@ -15,7 +15,7 @@ If you're willing to test a SIGUANET database using sample data, please consider
 
 ### Database requirements
 Please, bear in mind this tool won't create a database for you. A clean PostGIS database is needed which meets the following requirements:
-* PostgreSQL 9.2 or greater
+* PostgreSQL 9.1 or greater
 * PostGIS 2.0 or greater
 
 Remember that, beginning with version 2.0, PostGIS is installed as an extension on a per-database basis, thus making the management of geodatabases much cleaner.
